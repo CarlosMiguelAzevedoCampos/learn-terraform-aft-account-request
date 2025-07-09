@@ -3,10 +3,10 @@ module "security_account_st3633969" {
 
   control_tower_parameters = {
     AccountEmail             = "st3633969@gmail.com"
-    AccountName              = "networking-account-st3633969"
+    AccountName              = "networking-account"
     ManagedOrganizationalUnit = "Networking"
     SSOUserEmail             = "st3633969@gmail.com"
-    SSOUserFirstName         = "ST"
+    SSOUserFirstName         = "ST Account"
     SSOUserLastName          = "3633969"
   }
 
