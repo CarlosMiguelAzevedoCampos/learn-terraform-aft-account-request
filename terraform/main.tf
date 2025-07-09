@@ -1,19 +1,16 @@
 # Copyright Amazon.com, Inc. or its affiliates. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
-#
-module "sandbox_account_01" {
+
+module "management_account_01" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail = "carlosmiguel.sandbox.1996@gmail.com"
-    AccountName  = "sandbox-account-01"
-    # Syntax for top-level OU
-    # ManagedOrganizationalUnit = "Security"
-    # Syntax for nested OU
-    ManagedOrganizationalUnit = "Security"
-    SSOUserEmail     = "carlosmiguel.sandbox.1996@gmail.com"
-    SSOUserFirstName = "John"
-    SSOUserLastName  = "Doe"
+    AccountEmail        = "carlosmiguel.sandbox.1996@gmail.com"
+    AccountName         = "management-account-01"
+    ManagedOrganizationalUnit = "Management"  # <- Updated from Security to Management
+    SSOUserEmail        = "carlosmiguel.sandbox.1996@gmail.com"
+    SSOUserFirstName    = "John"
+    SSOUserLastName     = "Doe"
   }
 
   account_tags = {
