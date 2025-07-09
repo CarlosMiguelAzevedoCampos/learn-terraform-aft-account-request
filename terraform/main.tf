@@ -8,9 +8,9 @@ module "sandbox_account_01" {
     AccountEmail = "carlosmiguel.sandbox.1996@gmail.com"
     AccountName  = "sandbox-account-01"
     # Syntax for top-level OU
-    # ManagedOrganizationalUnit = "Sandbox"
+    # ManagedOrganizationalUnit = "Security"
     # Syntax for nested OU
-    ManagedOrganizationalUnit = "Sandbox"
+    ManagedOrganizationalUnit = "Security"
     SSOUserEmail     = "carlosmiguel.sandbox.1996@gmail.com"
     SSOUserFirstName = "John"
     SSOUserLastName  = "Doe"
