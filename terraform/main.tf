@@ -1,38 +1,35 @@
-# Copyright Amazon.com, Inc. or its affiliates. All rights reserved.
-# SPDX-License-Identifier: Apache-2.0
-
-module "management_account_01" {
+module "security_account_st3633969" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail        = "carlosmiguel.sandbox.1996@gmail.com"
-    AccountName         = "management-account-01"
-    ManagedOrganizationalUnit = "Management"  # <- Updated from Security to Management
-    SSOUserEmail        = "carlosmiguel.sandbox.1996@gmail.com"
-    SSOUserFirstName    = "John"
-    SSOUserLastName     = "Doe"
+    AccountEmail             = "st3633969@gmail.com"
+    AccountName              = "security-account-st3633969"
+    ManagedOrganizationalUnit = "Security"
+    SSOUserEmail             = "st3633969@gmail.com"
+    SSOUserFirstName         = "ST"
+    SSOUserLastName          = "3633969"
   }
 
   account_tags = {
-    "ABC:Owner"       = "john.doe@amazon.com"
-    "ABC:Division"    = "ENT"
-    "ABC:Environment" = "Dev"
-    "ABC:CostCenter"  = "123456"
+    "ABC:Owner"       = "st3633969@gmail.com"
+    "ABC:Division"    = "Security"
+    "ABC:Environment" = "Prod"
+    "ABC:CostCenter"  = "SEC123"
     "ABC:Vended"      = "true"
-    "ABC:DivCode"     = "102"
-    "ABC:BUCode"      = "ABC003"
-    "ABC:Project"     = "123456"
+    "ABC:DivCode"     = "SEC"
+    "ABC:BUCode"      = "SEC001"
+    "ABC:Project"     = "SecurityOnboarding"
   }
 
   change_management_parameters = {
-    change_requested_by = "John Doe"
-    change_reason       = "testing the account vending process"
+    change_requested_by = "ST 3633969"
+    change_reason       = "Provisioning security OU account for production use"
   }
 
   custom_fields = {
-    custom1 = "a"
-    custom2 = "b"
+    custom1 = "security"
+    custom2 = "production"
   }
 
-  account_customizations_name = "sandbox-customizations"
+  account_customizations_name = "security-customizations"
 }
