@@ -6,8 +6,8 @@ module "security_account_st3633969" {
     AccountName              = "networking-01"
     ManagedOrganizationalUnit = "Networking"
     SSOUserEmail             = "st3633969@gmail.com"
-    SSOUserFirstName         = "Networking Account"
-    SSOUserLastName          = "3633969"
+    SSOUserFirstName         = "Networking"
+    SSOUserLastName          = "Account"
   }
 
   account_tags = {
