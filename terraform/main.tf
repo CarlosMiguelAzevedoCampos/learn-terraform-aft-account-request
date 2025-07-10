@@ -6,7 +6,7 @@ module "security_account_st3633969" {
     AccountName              = "networking-01"
     ManagedOrganizationalUnit = "Networking"
     SSOUserEmail             = "st3633969@gmail.com"
-    SSOUserFirstName         = "ST Account"
+    SSOUserFirstName         = "Networking Account"
     SSOUserLastName          = "3633969"
   }
 
